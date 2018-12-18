@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/nancyeb27/Friend-Finder/issues"
   },
-  "homepage": "https://github.com/nancyeb27/Friend-Finder#readme"
+  "homepage": "https://github.com/nancyeb27/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "inquirer": "^6.2.1"
+  }
 }
