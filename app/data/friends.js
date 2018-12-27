@@ -7,14 +7,7 @@ var friends = [
 			
 		]
 	},
-	{
-		name: "Mike Smith",
-		photo: "#",
-		scores: [
-			
-		]
-	},
-	{
+		{
 		name: "Davey Jones",
 		photo: "#",
 		score: [
