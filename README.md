@@ -34,6 +34,7 @@ Best match is calculated by finding the friend with the minimal difference in sc
 A modal is then toggled, displaying the the best match to the person who just took the survey
 In essense, this will also be a form of notes that you may later reference weeks later
 Friends are stored as such:
+
 {
 "name": "Mike Smith",
 "photo": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjo1syV-9LfAhUl4oMKHQchBoAQjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fopenclipart.org%252Fdetail%252F261880%252Fcartoon-man-avatar%26psig%3DAOvVaw14MrPT3x7zqFfZhdP9y2OL%26ust%3D1546188099977343&psig=AOvVaw14MrPT3x7zqFfZhdP9y2OL&ust=1546188099977343",
