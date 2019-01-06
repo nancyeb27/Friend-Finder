@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- <script type="text/javascript" src="server.js"></script>
-  <script type="text/javascript" src="friends.js"></script> -->
+    <!-- <script type="text/javascript" src="server.js"></script> -->
+  <!-- <script type="text/javascript" src="friends.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
 
-</html>
 
 <body>
     <div class="container">
@@ -24,8 +23,10 @@
         <h3>About You</h3>
         <h4>Name (required)</h4>
         <input type="text" id="name" class="form-control" required>
+        
         <h4>Link to Photo Image (Required)</h4>
         <input type="text" id="photo" class="form-control" required>
+
         <hr>
         <h3>
             <strong>Question 1</strong>
@@ -163,21 +164,22 @@
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
             <i class="fa fa-check-circle" aria-hidden="true"></i>Submit
         </button>
-    </div>
+    
     <footer class="footer">
         <div class="container">
             <p>
                 <a href="/api/friends">API Friends List</a> |
-                <a href="https://github.com/nancybutterfield/Friend-Finder"></a> Github Repo</a>
+                <a href="https://github.com/nancyeb27/Friend-Finder"> Github Repo</a>
             </p>
         </div>
+    </footer>
         <!-- Modal content-->
         <div id="bestFriendModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                         <h3 class="modal-title">Your New Best Friend</h1>
+                         <h1 class="modal-title">Your New Best Friend</h1>
                      </div>
                     <div class="modal-body">
                         <h2 id="bestFriend"></h2>
@@ -190,6 +192,7 @@
 
              </div>
         </div>
+        
                 <script type="text/javascript">
                     // Chosen CSS
                     var config = {
@@ -261,13 +264,13 @@
                                     $("#q10").val()
                                 ]
                             };
-                            console.log(photo);
-
-                            var currentURL = window.location.origin;
+                           
+            var currentURL = window.location.origin;
 			// Ajax call for receiving response after POST req
 			$.post(currentURL + "/api/friends", userData, function(data) {
 				$("#bestFriend").text(data.name);
-				$("#bestFriendPhoto").attr("src", data.photo);
+                // $("#bestFriendPhoto").attr("src", data.photo);
+                $("#bestFriendPhoto").html(`<img src="${data.photo}"/>`);
 				$("#bestFriendModal").modal("toggle");
 			});
                         } else {

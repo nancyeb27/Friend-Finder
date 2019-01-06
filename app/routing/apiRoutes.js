@@ -7,7 +7,7 @@ var friends = require("../data/friends.js");
 // ROUTING
 // ===============================================================================
 
-module.exports = function (app) {
+module.exports = function(app) {
 // API GET Requests
 // ------------------------------
     app.get('/api/friends', function (req, res){
@@ -32,7 +32,6 @@ module.exports = function (app) {
       // default friend match is the first friend but result will be whoever has the minimum difference in scores
     var bestFriendIndex = 0;
     var minimumDifference = 40;
-   
 
        //loop through the friends data array of objects to get each friends scores
        for (var i = 0; i < friends.length - 1; i++) {

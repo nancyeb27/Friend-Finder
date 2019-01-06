@@ -2,7 +2,7 @@ var friends = [
 	
 		{
 		name: "Davey Jones",
-		photo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Feb%2FA_Cartoon_Man_Fixing_His_Cuffs.svg&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AA_Cartoon_Man_Fixing_His_Cuffs.svg&docid=GeFUfP4-jK0-DM&tbnid=8xHPLz0_oFOgUM%3A&vet=10ahUKEwja-ubUvcXfAhUBNKwKHTrYDQQQMwhuKAYwBg..i&w=816&h=1056&hl=en&bih=723&biw=1536&q=MAN&ved=0ahUKEwja-ubUvcXfAhUBNKwKHTrYDQQQMwhuKAYwBg&iact=mrc&uact=8",
+		photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjitfqT19ffAhXm24MKHWrCAIsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fphoto%2Fman-standing-near-building-white-black-turtleneck-shirt-874158%2F&psig=AOvVaw2msQtKjX9Mn2BOuV-X_AYk&ust=1546813366595254",
 		scores: [2, 5, 4, 1, 2, 3, 3, 2, 3, 3]
 	}
 ];
