@@ -19,6 +19,8 @@ Separate JavaScript files for routing (htmlRoutes.js and apiRoutes.js)
 Appropriate GET and POST routes for serving HTML pages and API callshttps:#herokuapp.com/
 Separate file for storing friends (friends.js)
 Calculate best match for user once survey is completed and return that match to the user
+
+
 Technologies Used
 JavaScript
 jQuery
@@ -26,6 +28,8 @@ node.js
 Express.js
 HTML
 Bootstrap
+
+
 Code Explanation
 Our server.js file sets up the Express server, specifying our port number, the npm packages that need to be loaded, and also the routes, which we have externalized
 There are 2 separate HTML files (home.html and survey.html) that serve as the front-end portion of our code; they determine what the user sees (the homepage and the survey, which will also show the resulting best match)
