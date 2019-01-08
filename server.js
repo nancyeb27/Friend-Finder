@@ -14,7 +14,7 @@ var cors = require('cors')
 var app = express();
 
 //allow OPTIONS on all resources
-app.options('*', cors())
+app.options('*', cors());
 
 var PORT = process.env.PORT || 8080;
 
