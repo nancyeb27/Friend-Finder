@@ -31,7 +31,7 @@ module.exports = function(app) {
 
       // default friend match is the first friend but result will be whoever has the minimum difference in scores
     var bestFriendIndex = 0;
-    var minimumDifference = 23;
+    var minimumDifference = 100;
 
        //loop through the friends data array of objects to get each friends scores
         for (var i = 0; i < friends.length; i++) {
@@ -51,7 +51,7 @@ module.exports = function(app) {
             console.log("after j loop")
             console.log("totalDifference after j loop", totalDifference);
                // If the sum of differences is less then the differences of the current "best match"
-            if (totalDifference >=  minimumDifference) {
+            if (totalDifference <=  minimumDifference) {
                 console.log("totalDifference in if", totalDifference);
                 
             // Reset the bestMatch to be the new friend.
